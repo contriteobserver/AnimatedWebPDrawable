@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <item><shape android:shape="rectangle">
+        <gradient
+            android:startColor="@android:color/holo_blue_dark"
+            android:endColor="@android:color/holo_purple"
+            android:angle="90"/>
+    </shape></item>
+    <item><com.example.webp.AnimatedWebpDrawable android:src="@raw/portrait"/></item>
+</layer-list>
