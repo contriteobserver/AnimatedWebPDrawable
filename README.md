@@ -1,6 +1,8 @@
-[![License](https://img.shields.io/badge/license-Apache%202.0%20License-blue.svg)](https://github.com/contriteobserver/RajawaliWebpAnimation/blob/master/LICENSE.txt)
+[![License](https://img.shields.io/badge/license-Apache%202.0%20License-blue.svg)](https://github.com/contriteobserver/AnimatedWebPDrawable/blob/master/LICENSE.txt)
 
 # AnimatedWebPDrawable
+![Animated Text Drawable layered between Foreground Text and Background Gradient](https://github.com/contriteobserver/AnimatedWebPDrawable/blob/master/images/banner.gif "Rotating Cube with Animated Textures")
+
 A proof of concept Android [Drawable Resource](https://developer.android.com/guide/topics/resources/drawable-resource) that integrates with [libWebp](https://developers.google.com/speed/webp/docs/api) animation
 
 This project contains submodules, so one may wish to clone with the `--recurse-submodules` option, as in
