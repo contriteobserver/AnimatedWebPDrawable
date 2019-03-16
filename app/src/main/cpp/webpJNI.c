@@ -20,6 +20,7 @@ jlong JNICALL Java_com_example_webp_AnimatedWebpDrawable_WebPAnimDecoder(JNIEnv 
     WebPAnimDecoderOptionsInit(dec_options);
 
     // Tune 'dec_options' as needed.
+    dec_options->color_mode = MODE_rgbA;
 
     WebPAnimDecoder* dec = WebPAnimDecoderNew(data, dec_options);
     jresult = (jlong) dec;
