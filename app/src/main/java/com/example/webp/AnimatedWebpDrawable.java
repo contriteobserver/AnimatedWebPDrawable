@@ -1,5 +1,6 @@
 package com.example.webp;
 
+import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -44,11 +45,8 @@ public class AnimatedWebpDrawable extends Drawable {
             throw new XmlPullParserException("<AnimatedWebpDrawable> requires a valid 'src' attribute");
         }
 
-        AssetFileDescriptor fd = r.openRawResourceFd(src);
-        mData = new byte[(int)fd.getLength()];
-        fd.close();
-
         InputStream inputStream = r.openRawResource(src);
+        mData = new byte[inputStream.available()];
         long count = inputStream.read(mData);
 
         mDecoder = WebPAnimDecoder(mData, count);
